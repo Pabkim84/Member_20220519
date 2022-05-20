@@ -13,5 +13,17 @@
     <select id="memberList" resultType="member">
         select * from member_table;
     </select>
+    <select id="findById" parameterType="Long" resultType="member">
+        select * from member_table where id = #{id}
+    </select>
+    <delete id="deleteId" parameterType="Long">
+        delete from member_table where id=#{id}
+    </delete>
+    <update id="updateId" parameterType="member">
+        update member_table set memberPhone=#{memberPhone} where id=#{id}
+    </update>
+    <select id="memberId" parameterType="String" resultType="String">
+        select memberId from member_table where memberId = #{memberId}
+    </select>
 </mapper>
 

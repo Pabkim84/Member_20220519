@@ -14,7 +14,9 @@
 <h2>시작페이지</h2>
 <a href="/save-form">회원가입</a>
 <a href="/login-form">로그인</a>
-<a href="/findAll-form">목록조회</a>
+<a href="/findAll-form">목록조회</a><br>
+<a href="/response-test">ResponseBody Test</a><br>
+<a href="/response-test2">ResponseBody Test2</a><br>
 
 로그인 회원 정보: ${loginMember}
 세션에 담은 memberId: ${sessionScope.loginMemberId}
